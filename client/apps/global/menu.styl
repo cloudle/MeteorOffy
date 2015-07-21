@@ -1,0 +1,32 @@
+@import '../../styles/global.import.styl'
+
+#menu
+  .branding
+    height nav-height; line-height nav-height
+    color #ffffff; //background-color #414550
+    font-size 20px
+    text-align center
+    border-bottom solid 1px #2C2C2C
+
+  ul.category-list
+    margin 0; padding 0
+    list-style none
+    border-bottom solid 1px #2C2C2C
+    > li
+      position relative
+      text-align center; padding 10px 0
+      a
+        font-size 20px; color #a6abbc
+        &:hover { color: #ffffff }
+      &.active
+        border-left solid 3px #5d9bfb
+        //background-color #34363F
+        a { color: #ffffff }
+        //&:after
+        //  content " "
+        //  width 0; height 0
+        //  border-top solid 8px transparent
+        //  border-bottom solid 8px transparent
+        //  border-right solid 8px #5d9bfb
+        //  absolute right 0 top 16px
+        //  z-index 2

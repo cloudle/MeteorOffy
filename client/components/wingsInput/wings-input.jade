@@ -1,0 +1,8 @@
+template(name="wingsInput")
+  .field-wrapper(name="wrapper" class="{{activeClass}} {{expandClass}} {{wrapperClass}} {{prefixClass}} {{type}}")
+    if label
+      .floating-label {{label}}
+    if prefix
+      span.prefix-text prefix
+
+    input(type="text" name="source")

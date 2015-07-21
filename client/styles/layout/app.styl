@@ -1,0 +1,33 @@
+@require '../global.import.styl'
+
+.app-layout
+  clearfix()
+
+  .dual-wrapper
+    float left; width 100%; height 100%
+    .dual-detail
+      margin-left side-menu-size
+      height 100%; overflow hidden
+
+  .dual-addon
+    float left
+    width side-menu-size; height 100%
+    margin-left -100%
+    background-color #2f313a
+
+.app-layout-detail
+  .inner-wrapper
+    float left; width 100%; height 100%
+    .inner-detail
+      margin-left side-list-size; height 100%
+
+  .inner-addon
+    float left; width side-list-size; height 100%
+    margin-left -100%
+    position relative; z-index 1
+    background-color #414550
+    //border-right solid 1px #EEEEEE
+    //box-shadow inset -16px 0 30px -16px rgba(0,0,0,0.8)
+
+#content
+  padding-top 50px

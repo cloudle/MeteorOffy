@@ -1,0 +1,13 @@
+template(name="applicationLayout")
+  .application
+    +navigation
+    #container.app-layout
+      .dual-wrapper: .dual-detail.app-layout-detail
+
+        .inner-wrapper: #content.inner-detail
+          +Template.dynamic(template=content)
+        #listing.inner-addon
+          +listing
+
+      #menu.dual-addon
+        +menu

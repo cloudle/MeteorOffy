@@ -1,0 +1,49 @@
+@import '../../styles/global.import.styl'
+
+#listing
+  .caption
+    height nav-height; line-height nav-height
+    color #ffffff; //background-color #282c36
+    padding 0 10px; font-size 16px
+
+  ul.lesson-chain
+    margin 0; padding 0
+    list-style none
+
+    li
+      position relative
+      a
+        color #CFCECE; font-size 13px
+        display block; padding 12px 0 12px 20px
+        border-bottom solid 1px #404144
+
+        .title
+          font-size 14px; font-weight bolder
+
+        &:before
+          absolute top -1px right 30px
+          content ' '; height 100%; width 3px
+          background-color #3d3d3d
+
+        .status
+          absolute top 19px right 18px
+          width 21px; height @width; line-height @width
+          text-align center; color #B3B3B3; font-size 16px
+          border solid 3px #3d3d3d
+          border-radius 50%
+          background-color #5c5c5c
+          wings-icon('\e94a')
+
+      &:first-child
+        a
+          border-top solid 1px #404144
+        a:before
+          top auto; bottom -1px; height 50%
+
+      &:last-child a:before
+        height 50%
+
+      &.active, &:hover
+        a { background-color: #464954; color: #ffffff }
+        .status
+          background-color #C8C4C4; color #565656
